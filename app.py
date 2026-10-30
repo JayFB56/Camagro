@@ -4,7 +4,8 @@ import threading
 import logging
 
 import cv2
-import mediapipe as mp
+from mediapipe.python.solutions import drawing_utils as mp_drawing
+from mediapipe.python.solutions import hands as mp_hands
 import numpy as np
 from flask import Flask, Response, jsonify, render_template_string, request
 
@@ -32,8 +33,8 @@ _latest_estado = {
 }
 
 
-mp_hands = mp.solutions.hands
-mp_drawing = mp.solutions.drawing_utils
+
+
 _hand_detector = mp_hands.Hands(
     static_image_mode=False,
     max_num_hands=4,
