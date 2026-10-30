@@ -5,15 +5,15 @@ import logging
 
 import cv2
 import mediapipe as mp
-
-mp_hands = mp.solutions.hands
-mp_drawing = mp.solutions.drawing_utils
 import numpy as np
 from flask import Flask, Response, jsonify, render_template_string, request
 
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+mp_hands = mp.solutions.hands
+mp_drawing = mp.solutions.drawing_utils
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 8 * 1024 * 1024

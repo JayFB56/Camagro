@@ -15,7 +15,7 @@ Si llega un POST mientras MediaPipe está procesando otro frame, el servidor lo 
 
 ## Requisitos
 
-Se recomienda Python 3.11. Las versiones están fijadas en **requirements.txt**; MediaPipe 0.10.35 publica ruedas para Python 3.10/3.11 y conserva **mp.solutions.hands**.
+Se recomienda Python 3.11. Las versiones están fijadas en **requirements.txt**; MediaPipe 0.10.21 conserva la API Legacy **mp.solutions.hands** y publica ruedas para Python 3.10/3.11.
 
 ## Ejecución local
 
