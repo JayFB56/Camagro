@@ -4,8 +4,10 @@ import threading
 import logging
 
 import cv2
-from mediapipe.python.solutions import drawing_utils as mp_drawing
-from mediapipe.python.solutions import hands as mp_hands
+import mediapipe as mp
+
+mp_hands = mp.solutions.hands
+mp_drawing = mp.solutions.drawing_utils
 import numpy as np
 from flask import Flask, Response, jsonify, render_template_string, request
 
